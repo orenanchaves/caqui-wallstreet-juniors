@@ -1,0 +1,22 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .agents/hooks/git-branch-guard.sh" },
+          { "type": "command", "command": "bash .agents/hooks/secret-scan.sh" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "bash .agents/hooks/npm-audit-gate.sh" },
+          { "type": "command", "command": "bash .agents/hooks/go-vet-gate.sh" }
+        ]
+      }
+    ]
+  }
+}

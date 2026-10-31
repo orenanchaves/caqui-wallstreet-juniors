@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "language": "pt-BR",
+  "modelPolicy": "inherit-default",
+  "squad": "Squad Copiloto Caqui",
+  "agents": [
+    {"id":"frontend_dev_agent","slug":"frontend-dev","title":"Dev Frontend","description":"Implementa a SPA React + Vite + TypeScript + Tailwind + TanStack Query em frontend/: seletor de cliente, painel de contexto e painel de sugestão com fontes, ação e alertas. MUST BE USED para código frontend.","skill":"frontend-engineering"},
+    {"id":"backend_dev_agent","slug":"backend-dev","title":"Dev Backend","description":"Implementa as APIs JSON em Go/Echo em backend/: carga de dados, regras de liquidação e IR, agente de sugestão com a Claude API e barreiras pré e pós-modelo. MUST BE USED para código backend.","skill":"backend-engineering"},
+    {"id":"qa_agent","slug":"qa","title":"QA","description":"Planeja e executa testes Go (go test), Vitest no frontend e a avaliação make avaliar contra perguntas_teste.jsonl com ferramentas/checar_respostas.py. MUST BE USED para qualidade e homologação.","skill":"quality-assurance"},
+    {"id":"appsec_agent","slug":"appsec","title":"AppSec","description":"Revisa injeção de prompt, vazamento de dados pessoais (CPF, dados de outro cliente), segredos, limite de requisições, validação de entrada e dependências Go/npm. MUST BE USED para segurança.","skill":"application-security"},
+    {"id":"devops_agent","slug":"devops","title":"DevOps / SRE","description":"Cuida do Dockerfile multi-stage, render.yaml, GitHub Actions, variáveis de ambiente e secrets do deploy no Render. MUST BE USED para infra, CI e deploy.","skill":"devops-sre"}
+  ]
+}

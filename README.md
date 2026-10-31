@@ -1,4 +1,8 @@
-# Caqui Wallstreet Juniors: <subtítulo do case>
+# Caqui Wallstreet Juniors: Copiloto do Atendente
+
+**Spec:** [SPEC.md](SPEC.md) · **URL pública:** <a definir após o deploy> · **Agentes:** [AGENTS.md](AGENTS.md)
+
+Ferramenta web em que o atendente escolhe o cliente, cola a pergunta e recebe a sugestão de resposta gerada por IA a partir do histórico, dos dados da conta e da base de conhecimento, com fontes, ação recomendada e alertas. O humano revisa e aprova antes de disparar.
 
 Case aberto do **<nome do evento>**, <data>.
 
